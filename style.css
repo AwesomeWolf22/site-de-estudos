@@ -1,0 +1,172 @@
+html, body {
+    height: 100%;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    width: 100%;
+    height: 30vh;
+    background-image: url("images/wolf-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.center{
+    box-sizing: border-box;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.article-2col{
+    box-sizing: border-box;
+    border: 5px solid rgba(255,255,255,0);
+    vertical-align: top;
+    margin-top: 30px;
+    margin-right: -4px;
+    display: inline-block;
+    width: 640px;
+}
+
+.article{
+    box-sizing: border-box;
+    border: 5px solid rgba(255,255,255,0);
+}
+
+.nav-bar{
+    width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+.nav-bar li{
+    display: inline;
+    float: left;
+    border: 5px;
+    border-right: 1px solid #bbb;
+}
+
+.nav-bar li.last{
+    float: right;
+    border-right: none;
+    border-left: 1px solid #bbb;
+}
+
+.nav-bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+.nav-bar li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover{
+    background-color: #111;
+}
+
+.nav-bar li.active{
+    background-color: #04AA6D;
+    color: white;
+}
+
+.gallery img{
+    box-sizing: border-box;
+    border: 5px solid rgba(255,255,255,0);
+    width: 640px;
+    float: left;
+}
+
+.gallery{
+}
+
+@media screen and (max-width:1024px) {
+    .gallery img{
+        width: 500px;
+    }
+    .article-2col{
+        width: 500px; 
+    }
+    .article{
+
+    }
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url('images/wolf-avatar.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-circle {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-image: url('images/wolf-avatar.png');
+    background-size: cover;
+    background-position: center;
+    float: left;
+    border: solid black 1px;
+    margin-top: -10px;
+}
+
+.perfil {
+    width: 175px;
+}
+
+.banner {
+    height: 18vh;
+    width: 100%;
+    background-image: url("images/wolf-banner-2.png");
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+}
+
+.banner > h1 {
+    font-size: 12vh;
+    font-family: garamond;
+    text-shadow: 0 0 3px white, 0 0 2px yellow;
+}
+
+.box {
+    width: 100%;
+    margin: 30px auto;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+
+.item {
+    display: inline-block;
+    margin: 0px 40px;
+    width: 200px;
+    background-color: white;
+    border: solid black 2px;
+    text-align: center;
+    border-radius: 7%;
+}
+
+.item > img {
+    height: 250px;
+    width: 200px;
+    border-bottom: solid black 2px;
+    object-fit: cover;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
